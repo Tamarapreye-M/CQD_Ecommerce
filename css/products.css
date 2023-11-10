@@ -1,0 +1,87 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eee;
+  font-family: 'Mulish', sans-serif;
+}
+
+/* SECTION ONE */
+#section__one {
+  background-color: rgb(208, 215, 201);
+  text-align: center;
+  padding: 40px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+#section__one .container {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+#section__one .container h2 {
+  font-weight: 300;
+  font-size: 16px;
+}
+
+#section__one .container button {
+  padding: 15px 30px;
+  background-color: #000;
+  border: none;
+  cursor: pointer;
+
+  color: white;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+}
+
+#section__one .container button:hover {
+ opacity: 0.8;
+}
+
+/* SECTION TWO */
+img {
+  width: 250px;
+  height: 250px;
+  /* object-fit: cover; */
+}
+
+#section__two {
+  padding: 40px;
+}
+
+#section__two .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+#section__two .container .fruit_veg .flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+#section__two .container .fruit_veg .flex div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+}
