@@ -3,10 +3,12 @@
   margin: 0;
   box-sizing: border-box;
 }
-
+h1, h2, h3, h4, h5, h6{
+font-family: 'Mulish', sans-serif;
+}
 body {
   background-color: #eee;
-  font-family: 'Mulish', sans-serif;
+  
 }
 
 /* SECTION ONE */
@@ -84,6 +86,7 @@ img {
 #section__two .container .fruit_veg .flex_one {
     display: flex;
     flex-direction: row;
+  flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 20px;
@@ -94,6 +97,7 @@ img {
 #section__two .container .fruit_veg .flex_two {
     display: flex;
     flex-direction: row;
+  flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 20px;
@@ -104,6 +108,7 @@ img {
 #section__two .container .fruit_veg .flex_three {
     display: flex;
     flex-direction: row;
+  flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 20px;
@@ -114,6 +119,7 @@ img {
 #section__two .container .fruit_veg .flex_four {
     display: flex;
     flex-direction: row;
+  flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 20px;
@@ -124,6 +130,7 @@ img {
   #section__two .container .fruit_veg .flex_five {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 20px;
@@ -135,6 +142,7 @@ img {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
     gap: 20px;
     text-align: center;
@@ -146,6 +154,7 @@ img {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     gap: 20px;
     text-align: center;
     padding: 5px;
@@ -156,6 +165,7 @@ img {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     gap: 20px;
     text-align: center;
     padding: 5px;
@@ -166,6 +176,7 @@ img {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     gap: 20px;
     text-align: center;
     padding: 5px;
@@ -175,6 +186,7 @@ img {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
     gap: 20px;
     text-align: center;
