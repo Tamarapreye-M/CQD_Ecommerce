@@ -141,6 +141,15 @@ main{
  
 
 }
+.list-div {
+	display: flex;
+	gap: 2rem;
+}
+ol {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
 
 @media screen and (max-width: 800px) {
   nav ul{
