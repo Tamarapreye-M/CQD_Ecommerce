@@ -3,10 +3,12 @@
   margin: 0;
   box-sizing: border-box;
 }
-
+h1, h2, h3, h4, h5, h6{
+font-family: 'Mulish', sans-serif;
+}
 body {
   background-color: #eee;
-  font-family: "Mulish", sans-serif;
+  font-family: 'Mulish', sans-serif;
 }
 
 /* SECTION ONE */
@@ -84,104 +86,104 @@ h3 {
 }
 
 #section__two .container .fruit_veg .flex_one {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  text-align: center;
-  padding: 5px;
-}
-
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    padding: 5px;
+  }
+  
 #section__two .container .fruit_veg .flex_two {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  text-align: center;
-  padding: 5px;
-}
-
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    padding: 5px
+  }
+  
 #section__two .container .fruit_veg .flex_three {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  text-align: center;
-  padding: 5px;
-}
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    padding: 5px;
+  }
 
 #section__two .container .fruit_veg .flex_four {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  text-align: center;
-  padding: 5px;
-}
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    padding: 5px;
+  }
 
-#section__two .container .fruit_veg .flex_five {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  text-align: center;
-  padding: 5px;
-}
+  #section__two .container .fruit_veg .flex_five {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    padding: 5px;
+  }
 
-#section__two .container .others .flex_six {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  text-align: center;
-  padding: 5px;
-}
+  #section__two .container .others .flex_six {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    padding: 5px;
+  }
 
-#section__two .container .others .flex_seven {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  text-align: center;
-  padding: 5px;
-}
+  #section__two .container .others .flex_seven {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    padding: 5px;
+  }
 
-#section__two .container .herbs_spices .flex_eight {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  text-align: center;
-  padding: 5px;
-}
+  #section__two .container .herbs_spices .flex_eight {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    padding: 5px;
+  }
 
-#section__two .container .herbs_spices .flex_nine {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  text-align: center;
-  padding: 5px;
-}
+  #section__two .container .herbs_spices .flex_nine {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    padding: 5px;
+  }
 
-#section__two .container .herbs_spices .flex_ten {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  text-align: center;
-  padding: 5px;
-}
+  #section__two .container .herbs_spices .flex_ten {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    padding: 5px;
+  }
 
 @media (max-width: 800px) {
   #section__two .container .fruit_veg .flex_one,
