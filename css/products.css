@@ -184,7 +184,7 @@ h3 {
     padding: 5px;
   }
 
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
   #section__two .container .fruit_veg .flex_one,
   #section__two .container .fruit_veg .flex_two,
   #section__two .container .fruit_veg .flex_three,

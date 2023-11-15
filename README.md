@@ -22,10 +22,10 @@ The contributing group members are:
 6. Oluwatobiloba Bakare
 7. Rabecca Muasya
 8. Ooreofe Lawanson
+9. Sindiswa Toli
 
 The group members who did not participate are:
 
-9. Sindiswa Toli
 10. Taiwo Abdulsalam
 
 ## Getting Started

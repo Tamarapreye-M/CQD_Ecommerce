@@ -1,150 +1,148 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
 *{
 
- margin: 0;
+margin: 0;
 
- padding: 0;
+padding: 0;
 
- box-sizing: border-box;  
-  font-family: 'Poppins', sans-serif;
+box-sizing: border-box;
+  
+font-family: 'Poppins', sans-serif;
 
 }
 
 header{
 
-    height: 100vh;
+height: 100vh;
 
-    background-color: pink;
+background-color: pink;
 
-    background-image: url("https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1920,fit=crop/granvillelitec9tss/img-mxkJ4pb4rMUe8Nw1.jpg");
+background-image: url("https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1920,fit=crop/granvillelitec9tss/img-mxkJ4pb4rMUe8Nw1.jpg");
 
-    background-size: cover;
+background-size: cover;
 
-    background-position: center;
+background-position: center;
 
-    background-repeat: no-repeat;
+background-repeat: no-repeat;
 
 }
 
 nav{
+background-color: white;
 
-    background-color: white;
+display: flex;
 
-    display: flex;
+justify-content: space-between;
 
-    justify-content: space-between;
+align-items: center;
 
-    align-items: center;
-
-    padding: 2rem 8rem;
+padding: 2rem 8rem;
 
 }
 
 #logo{
 
-    text-transform: uppercase;
+text-transform: uppercase;
 
 }
 
 nav ul{
 
-    display: flex;
+display: flex;
 
-    gap: 40px;
+gap: 40px;
 
-    list-style: none;
+list-style: none;
 
 }
 
 nav a{
 
-    color: black;
+color: black;
 
-    text-decoration: none;
+text-decoration: none;
 
 }
 
 .hero{
 
-    color: white;
+color: white;
 
-    display: flex;
+display: flex;
 
-    justify-content: center;
+justify-content: center;
 
-    align-items: center;
+align-items: center;
 
-    flex-direction: column;
+flex-direction: column;
 
-    height: 90vh;
+height: 90vh;
 
 }
 
 .hero h1{
 
-    font-size: 5rem;
+font-size: 5rem;
 
-    width: 60%;
+width: 60%;
 
-    text-align: center;
+text-align: center;
 
-    margin-bottom: 10px;
+margin-bottom: 10px;
 
 }
 
 .hero button{
 
-    color: black;
+color: black;
 
-    background: white;
+background: white;
 
-    border: none;
+border: none;
 
-    padding: 10px 20px;
+padding: 10px 20px;
 
-    font-size: 16px;
+font-size: 16px;
 
 }
 
 main{
 
-    background-color: #ffe8ef;
+background-color: #ffe8ef;
 
-    padding-block: 3rem;
+padding-block: 3rem;
 
 }
 
 .wrapper{
 
-    width: 40%;
+width: 40%;
 
-    margin-inline: auto;
+margin-inline: auto;
 
-    text-align: center;
+text-align: center;
 
-    font-size: 1.2rem;
+font-size: 1.2rem;
 
 }
 
 .wrapper p{
 
-    margin-block: 1rem;
+margin-block: 1rem;
 
 }
 
 #para{
 
-    font-size: 1.6rem;
+font-size: 1.6rem;
 
-    font-weight: 500;
-
- 
+font-weight: 500;
 
 }
 .list-div {
 	display: flex;
-	flex-wrap: wrap;
-	gap: 2rem;
+  justify-content: center;
+	gap: 5rem;
 }
 ol {
 	display: flex;
@@ -153,12 +151,14 @@ ol {
 }
 footer {
 	padding: 5rem;
-
+  text-align: center;
 	}
-@media screen and (max-width: 800px) {
-  nav ul{
-   flex-direction: column;
-  }
+
+
+@media screen and (max-width: 800px){
+nav ul{
+  flex-direction: column;
+}
   nav {
     padding: 0.5rem;
   }
@@ -171,12 +171,16 @@ footer {
   }
   .wrapper p {
     font-size: 0.8rem;
-
 }
 	footer {
-	padding: 2rem;
-
+	padding: 0 2rem;
 	}
+}
+
+@media screen and (max-width: 500px) {
+  .list-div{
+    flex-direction: column;
+  }
 }
 
 
