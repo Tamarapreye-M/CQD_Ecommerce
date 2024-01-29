@@ -7,6 +7,7 @@ function addDom(data) {
       <img src='${item.image}' />
       <h2>${item.title}</h2>
       <p>${item.description}</p>
+      <p class="price">$${item.price}</p>
     </div>
     ` 
   }).join(" ");
