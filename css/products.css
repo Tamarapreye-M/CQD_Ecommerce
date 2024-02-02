@@ -34,7 +34,11 @@ body {
 
 #section__one .container h2 {
   font-weight: 300;
-  font-size: 16px;
+  font-size: 3rem;
+}
+
+#section__one .container h3{
+  font-size: 1.5rem;
 }
 
 #section__one .container button {
@@ -42,14 +46,17 @@ body {
   background-color: #000;
   border: none;
   cursor: pointer;
-
   color: white;
+  font-size: 1.8rem;
   font-family: "DM Sans", sans-serif;
   font-weight: 500;
+  transform: scale(1);
+  transition: transform 0.4s;
 }
 
 #section__one .container button:hover {
   opacity: 0.8;
+  transform: scale(1.1);
 }
 /* SECTION TWO */
 img {
@@ -66,6 +73,7 @@ img {
 h2 {
   text-align: center;
   padding: 5px;
+  font-size: 2rem;
   margin-bottom: 5px;
 }
 
@@ -78,11 +86,35 @@ h3 {
 
 #section__two .container {
   --gap: clamp(1rem, 5vmin, 2rem);
-  columns: 400px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   gap: var(--gap);  
   width: 80%;
   max-width: 100%;
   margin: 5rem auto;
+}
+
+#section__two .container .price {
+  margin-top: auto;
+  cursor: pointer;
+  transform: scale(1);
+  transition: transform 0.4s;
+}
+
+#section__two .container .price:hover{
+  transform: scale(1.1);
+}
+
+#section__two .container .description{
+  font-size: 1.5rem;
+  max-height: 100px; /* Set a maximum height for the paragraph */
+  overflow: hidden;
+}
+
+#section__two .container .readMoreBtn {
+  cursor: pointer;
+  color: lightslategray;
+  font-size: 1.2rem;
 }
 
 #section__two .container * {

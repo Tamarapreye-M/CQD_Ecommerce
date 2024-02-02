@@ -6,13 +6,34 @@ function addDom(data) {
     return `<div class="item">
       <img src='${item.image}' />
       <h2>${item.title}</h2>
-      <p>${item.description}</p>
+      <p class="description">${item.description}</p>
+      <p class="readMoreBtn">Read More</p>
       <p class="price">$${item.price}</p>
     </div>
     ` 
   }).join(" ");
   
   container.innerHTML = divs
+
+  // Read More Function For Item Description
+  const readMoreBtns = document.querySelectorAll('.readMoreBtn');
+  readMoreBtns.forEach((btn, index) => {
+    let isExpanded = false;
+    const description = document.querySelectorAll('.description')[index];
+
+    btn.addEventListener('click', function() {
+      if (isExpanded) {
+        description.style.maxHeight = '100px'; // Set back to the collapsed state
+        btn.textContent = 'Read More';
+      } else {
+        description.style.maxHeight = 'none'; // Expand to show all content
+        btn.textContent = 'Read Less';
+      }
+
+      isExpanded = !isExpanded;
+    });
+  });
+
   console.log(data);
 }
 
