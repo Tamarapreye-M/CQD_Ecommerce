@@ -84,6 +84,10 @@ h3 {
   margin: 5px;
 }
 
+#section__two select{
+  font-size: 1.5rem;
+}
+
 #section__two .container {
   --gap: clamp(1rem, 5vmin, 2rem);
   display: grid;
