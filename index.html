@@ -1,69 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
-    <link rel="stylesheet" href="./css/home.css" />
-  </head>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Home</title>
+		<link rel="stylesheet" href="./css/home.css" />
+	</head>
 
-  <body>
-    <header>
-      <nav>
-        <h2 id="logo">dynasty</h2>
-        <ul>
-          <li>
-            <a href="./index.html">Home</a>
-          </li>
-          <li>
-            <a href="#about">About us</a>
-          </li>
-          <li>
-            <a href="./products.html">Shop</a>
-          </li>
-          <li>
-            <a href="">Members</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="hero">
-        <h1>Quality and Class</h1>
-        <button>what's on offer</button>
-      </div>
-    </header>
+	<body>
+		<header>
+			<nav>
+				<h2 id="logo">dynasty</h2>
+				<div class="navbar__toggle" id="mobile-menu">
+					<span class="bar"></span> <span class="bar"></span>
+					<span class="bar"></span>
+				</div>
 
-    <main>
-      <div class="wrapper">
-        <h6>About us</h6>
+				<ul class="navbar__menu">
+					<li>
+						<a href="./index.html">Home</a>
+					</li>
 
-        <p id="para">
-          We are one of the leading e-commerce platform active across the continent. Our platform consists of a marketplace connecting thousands of consumers, with integrated logistics and digital payment services.
-        </p>
-        <p id="para">
-          Dynasty saw the light of day after our Co-founders got frustrated with the trend of buying and selling online. It had become clear that the only way to cater to a growing market of modern society who wanted stylish, timeless but interesting stuff was to take matters into our own hands. <br>
-          We are first to have access to products directly from the company's factory and straight to our warehouse.
-        </p>
-      </div>
-    </main>
+					<li>
+						<a href="#about">About us</a>
+					</li>
 
-    <footer>
-      <h2>The group members are:</h2>
-      <div class="list-div">
-        <ol style="margin-left: 1rem">
-          <li>Tamarapreye Michael</li>
-          <li>Joy Abel</li>
-          <li>Iboi Osezele Ejemen</li>
-          <li>Winner Onwuteaka</li>
-          <li>Queen-Ann Asuquo</li>
-        </ol>
-        <ol start="6" style="margin-left: 1rem">
-          <li>Bakare Oluwatobiloba Eniola</li>
-          <li>Rabecca Muasya</li>
-          <li>Ooreofe Lawanson</li>
-          <li>Sindiswa Toli</li>
-          <li>Taiwo Abdulsalam</li>
-        </ol>
-      </div>
-    </footer>
-  </body>
+					<li>
+						<a href="./products.html">Shop</a>
+					</li>
+
+					<li>
+						<a href="#members">Members</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="hero">
+				<h1>Quality and Class</h1>
+				<button>what's on offer</button>
+			</div>
+		</header>
+
+		<main>
+			<div class="wrapper">
+				<h6>About us</h6>
+
+				<p class="para">
+					We are one of the leading e-commerce platform active across the
+					continent. Our platform consists of a marketplace connecting thousands
+					of consumers, with integrated logistics and digital payment services.
+				</p>
+				<p class="para">
+					Dynasty saw the light of day after our Co-founders got frustrated with
+					the trend of buying and selling online. It had become clear that the
+					only way to cater to a growing market of modern society who wanted
+					stylish, timeless but interesting stuff was to take matters into our
+					own hands. <br />
+					We are first to have access to products directly from the company's
+					factory and straight to our warehouse.
+				</p>
+			</div>
+		</main>
+
+		<footer>
+			<h2>The group members are:</h2>
+			<div class="list-div">
+				<ol style="margin-left: 1rem">
+					<li>Tamarapreye Michael</li>
+					<li>Joy Abel</li>
+					<li>Iboi Osezele Ejemen</li>
+					<li>Winner Onwuteaka</li>
+					<li>Queen-Ann Asuquo</li>
+				</ol>
+				<ol start="6" style="margin-left: 1rem">
+					<li>Bakare Oluwatobiloba Eniola</li>
+					<li>Rabecca Muasya</li>
+					<li>Ooreofe Lawanson</li>
+					<li>Sindiswa Toli</li>
+					<li>Taiwo Abdulsalam</li>
+				</ol>
+			</div>
+		</footer>
+
+		<script src="./js/mobile.js"></script>
+	</body>
 </html>
