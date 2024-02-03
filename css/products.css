@@ -34,7 +34,11 @@ body {
 
 #section__one .container h2 {
   font-weight: 300;
-  font-size: 16px;
+  font-size: 3rem;
+}
+
+#section__one .container h3{
+  font-size: 1.5rem;
 }
 
 #section__one .container button {
@@ -42,14 +46,17 @@ body {
   background-color: #000;
   border: none;
   cursor: pointer;
-
   color: white;
+  font-size: 1.8rem;
   font-family: "DM Sans", sans-serif;
   font-weight: 500;
+  transform: scale(1);
+  transition: transform 0.4s;
 }
 
 #section__one .container button:hover {
   opacity: 0.8;
+  transform: scale(1.1);
 }
 /* SECTION TWO */
 img {
@@ -66,6 +73,7 @@ img {
 h2 {
   text-align: center;
   padding: 5px;
+  font-size: 2rem;
   margin-bottom: 5px;
 }
 
@@ -76,127 +84,81 @@ h3 {
   margin: 5px;
 }
 
-#section__two .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
+#section__two select{
+  font-size: 1.5rem;
 }
 
-#section__two .container .fruit_veg .flex_one {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    text-align: center;
-    padding: 5px;
-  }
-  
-#section__two .container .fruit_veg .flex_two {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    text-align: center;
-    padding: 5px
-  }
-  
-#section__two .container .fruit_veg .flex_three {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    text-align: center;
-    padding: 5px;
-  }
+#section__two .container {
+  --gap: clamp(1rem, 5vmin, 2rem);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: var(--gap);  
+  width: 80%;
+  max-width: 100%;
+  margin: 5rem auto;
+}
 
-#section__two .container .fruit_veg .flex_four {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    text-align: center;
-    padding: 5px;
-  }
+#section__two .container .price {
+  margin-top: auto;
+  cursor: pointer;
+  transform: scale(1);
+  transition: transform 0.4s;
+}
 
-  #section__two .container .fruit_veg .flex_five {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    text-align: center;
-    padding: 5px;
-  }
+#section__two .container .price:hover{
+  transform: scale(1.1);
+}
 
-  #section__two .container .others .flex_six {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    text-align: center;
-    padding: 5px;
-  }
+#section__two .container .description{
+  font-size: 1.5rem;
+  max-height: 100px; /* Set a maximum height for the paragraph */
+  overflow: hidden;
+}
 
-  #section__two .container .others .flex_seven {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    text-align: center;
-    padding: 5px;
-  }
+#section__two .container .readMoreBtn {
+  cursor: pointer;
+  color: lightslategray;
+  font-size: 1.2rem;
+}
 
-  #section__two .container .herbs_spices .flex_eight {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    text-align: center;
-    padding: 5px;
-  }
+#section__two .container * {
+  break-inside: avoid;
+  margin-bottom: var(--gap);
+}
 
-  #section__two .container .herbs_spices .flex_nine {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    text-align: center;
-    padding: 5px;
+@media screen and (max-width: 560px) {
+  #section__two .container {
+    grid-template-columns: repeat(1, 1fr);
   }
+}
 
-  #section__two .container .herbs_spices .flex_ten {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    text-align: center;
-    padding: 5px;
-  }
 
-@media screen and (max-width: 800px) {
-  #section__two .container .fruit_veg .flex_one,
-  #section__two .container .fruit_veg .flex_two,
-  #section__two .container .fruit_veg .flex_three,
-  #section__two .container .fruit_veg .flex_four,
-  #section__two .container .fruit_veg .flex_five,
-  #section__two .container .fruit_veg .flex_six,
-  #section__two .container .fruit_veg .flex_seven,
-  #section__two .container .fruit_veg .flex_eight,
-  #section__two .container .fruit_veg .flex_nine,
-  #section__two .container .fruit_veg .flex_ten
-  {
-    display: flex;
-    flex-direction: column;
-  }
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+
+  padding: 2rem;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.item img {
+  border-radius: 3px;
+}
+
+select {
+  padding: 0.5rem  ;
+  font-size: 1.2rem;
+  margin-block: 1rem;
+}
+
+.price {
+  color: white;
+  background-color: black;
+  padding: 1rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 3px;
 }
